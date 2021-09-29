@@ -19,7 +19,7 @@ export default {
     cursor: pointer;
     margin-top: 2em;
     margin-left: 2em;
-    margin-bottom: 6em;
+    /* margin-bottom: 6em; */
     background-color: green;  
     border: 0; 
     line-height: 50px;

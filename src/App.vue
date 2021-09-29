@@ -46,7 +46,7 @@ export default {
     margin: 0;
     padding: 0;
     /* grid-template-columns: 57% 43%; */
-     grid-template-rows: 760px 100px;
+     grid-template-rows: 760px 50px;
       height: 100vh; 
     /* grid-gap: 20px;
    
