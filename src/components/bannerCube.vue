@@ -101,8 +101,18 @@ body {
 }
 .wrapper {
     position: relative;
-    width: 600px;
-    margin-left: 100px;
+    width: 640px;
+    margin-left: 110px;
     margin-top: 60px;
+}
+
+
+@media screen and (max-width: 980px) {
+  
+.wrapper {
+   
+    width: 360px;
+   
+}
 }
 </style>

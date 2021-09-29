@@ -28,12 +28,13 @@ export default {
     text-align: center;
     font-size: 18px;         
     position: absolute;
-    font-size: 0.8em;
+    /* font-size: 0.8em; */
     line-height: 120%;
     font-weight: 900;
     text-align: center;
-    font-family: 'LeroyMerlinSans', Arial, Helvetica, sans-serif;
+    font-family: 'LeroyMerlinSans-Regular';  
     font-weight: normal;
+   
 }
 .bannerLogo{
   display: flex;
@@ -41,6 +42,15 @@ export default {
 }
 .footerText {
   margin-left: 50%;
+}
+
+@media screen and (max-width: 980px) {
+  
+.footer {
+    position: relative;
+    margin-top: 10em;
+   
+}
 }
 </style>
  

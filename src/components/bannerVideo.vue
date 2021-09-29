@@ -39,12 +39,9 @@ export default {
 }
 
 @media screen and (max-width: 980px) {
-    /* .videoBlock {
-    height: 50vh !important;
-    width: 50vw;
-    left: 50vw;
-    top: 0;
-    } */
+    .videoBlock {
+    width: 370px;
+    }
 }
 
 @media (orientation: landscape) {

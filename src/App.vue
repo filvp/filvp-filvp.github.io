@@ -68,9 +68,13 @@ export default {
 
 @media screen and (max-width: 980px) {
     #app{
-        display: flex; 
-        flex-direction:column;
-        /* margin:4em; */
+        display: grid; 
+        grid-template-columns: 1fr;
+        min-height: 100vh;
+    }
+    .firstScreen {
+       display: grid; 
+       grid-template-columns: 1fr;
     }
 }
 
