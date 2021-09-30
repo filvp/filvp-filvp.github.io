@@ -1,4 +1,3 @@
-
 <template>
 <div class='wrapper'>
 <swiper :effect="'cube'" :grabCursor="true" :cubeEffect='{
@@ -8,8 +7,8 @@
   "shadowScale": 0.94
 }' 
 :autoplay='{
-  "delay": 5000
-}'
+   delay: 5000
+ }'
 :pagination="false" class="mySwiper">
   <swiper-slide><img src="../assets/i/01.jpg" /></swiper-slide>
   <swiper-slide><img src="../assets/i/02.jpg" /></swiper-slide>
@@ -21,18 +20,14 @@
 <script>
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from 'swiper/vue';
-
 import "swiper/swiper-bundle.min.css";
+import "swiper/swiper-bundle.min.js";
 
 // import "swiper/effect-cube"
 // import "swiper/pagination"
-
-
 import "swiper/components/effect-cube/effect-cube.min.css";
 
-
 // import './style.css';
-
 
 // import Swiper core and required modules
 import SwiperCore, {
@@ -53,14 +48,20 @@ export default {
         
     };
   },
-  methods: {
-    
+  methods: {    
+    //  loop: true,
+    // speed: 4000,
+    // autoplay: {
+    // enabled: true,
+    // delay: 2,}
   }
-  
 }
 
-
-
+// const swiper = new Swiper('.mySwiper', {
+//  autoplay: {
+//    delay: 5000,
+//  },
+// });
 
 </script>
 <style>
@@ -72,10 +73,6 @@ body {
 }
 
 body {
-  background: #eee;
-  /* font-family: Helvetica Neue, Helvetica, Arial, sans-serif; */
-  font-size: 14px;
-  color: #000;
   margin: 0;
   padding: 0;
 }
@@ -84,10 +81,6 @@ body {
   width: 300px;
   height: 300px;
   position: absolute;
-  /* left: 50%;
-  top: 50%;
-  margin-left: -150px;
-  margin-top: -150px; */
 }
 
 .swiper-slide {
@@ -103,16 +96,13 @@ body {
     position: relative;
     width: 640px;
     margin-left: 110px;
-    margin-top: 60px;
+    margin-top: 2em;
 }
 
 
-@media screen and (max-width: 980px) {
-  
-.wrapper {
-   
+@media screen and (max-width: 980px) {  
+.wrapper {   
     width: 360px;
-   
 }
 }
 </style>

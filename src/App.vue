@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style>
-  @font-face {
+@font-face {
      font-family: 'LeroyMerlinSans-Bold';
      src: url('/assets/fonts/LeroyMerlinSans-Bold.eot');
      src: url('/assets/fonts/LeroyMerlinSans-Bold?#iefix') format('embedded-opentype'),
@@ -40,30 +40,25 @@ export default {
      url('/assets/fonts/LeroyMerlinSans-Regular.ttf') format('font-truetype');    
      font-weight: normal;
      font-style: normal;
-      }
+}
 #app { 
     display: grid; 
+    grid-template-rows: 760px 50px;
+    height: 100vh; 
     margin: 0;
-    padding: 0;
-    /* grid-template-columns: 57% 43%; */
-     grid-template-rows: 760px 50px;
-      height: 100vh; 
-    /* grid-gap: 20px;
-   
-    /* position: relative; */
+    padding: 0;   
 }
 .firstScreen {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 .footer {
-  bottom: 0;
+    bottom: 0;
 }
 
 .videobutton{
-  display: flex;
-  flex-direction: column;
-  /* margin-left: 2em; */
+    display: flex;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 980px) {

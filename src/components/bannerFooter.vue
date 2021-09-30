@@ -39,6 +39,8 @@ export default {
 .bannerLogo{
   display: flex;
   height: 60px;
+  -webkit-box-shadow: 0 0.4em 0 rgb(0 0 0 / 15%);
+  box-shadow: 0 0.4em 0 rgb(0 0 0 / 15%);
 }
 .footerText {
   margin-left: 50%;

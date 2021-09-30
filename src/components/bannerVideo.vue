@@ -1,11 +1,11 @@
 <template>
      <div class="videoBlock">
-                <video width="405" height="230" controls="controls" poster="../assets/i/video.png">
+                <video autoplay="autoplay" width="570" height="320" muted="muted" controls="controls" poster="../assets/i/video.png">
                   <source src="../assets/i/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>                  
                 </video>   
        <div class="bannerMute">       
-        <!-- <img src="../assets/i/close.svg"> -->
-        <img src="../assets/i/mute.svg">
+        <div><img src="../assets/i/close.svg"></div>
+        <div class='mute'><img src="../assets/i/mute.svg"></div>
        </div>           
     </div>
 </template>
@@ -21,9 +21,9 @@ export default {
 </script>
 <style scoped>
 .videoBlock {
-  width: 600px; 
-  margin-top: 4em; 
-  margin-left: 4em;
+  width: 700px; 
+  margin-top: 2em; 
+  margin-left: 6em;
   display: flex;
   justify-content: space-between;
  
@@ -33,15 +33,37 @@ export default {
     left: 50vw;
     top: 0; */
 }
+
 .bannerMute img{
-  width: 60px;  
-  margin-top: 2em;
+  width: 70px;  
+  /* margin-top: 2em; */
+}
+.bannerMute{
+  display: flex;
+  flex-direction: column; 
+}
+
+.mute{
+  margin-top: 10em;
 }
 
 @media screen and (max-width: 980px) {
     .videoBlock {
-    width: 370px;
+    width: 430px;
     }
+    .mute{
+    margin-top: 7em;
+}
+video{
+  width: 420px;
+  height: 230px;
+}
+
+.bannerMute img{
+  width: 50px;  
+  margin-left: .5em;
+  /* margin-top: 2em; */
+}
 }
 
 @media (orientation: landscape) {
