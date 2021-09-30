@@ -18,50 +18,45 @@
   </div>
 </template>
 <script>
-// Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import "swiper/swiper-bundle.min.css";
 import "swiper/swiper-bundle.min.js";
-
-// import "swiper/effect-cube"
-// import "swiper/pagination"
 import "swiper/components/effect-cube/effect-cube.min.css";
 
-// import './style.css';
 
-// import Swiper core and required modules
 import SwiperCore, {
-  EffectCube
+  Autoplay, EffectCube
 } from 'swiper';
 
-// install Swiper modules
-SwiperCore.use([EffectCube]);
+
+SwiperCore.use([Autoplay, EffectCube]);
 
 
+
+
+ 
 export default {
-  components: {
-    Swiper,
-    SwiperSlide,
-  },
   data() {
-    return {        
-        
+    return {    
+      swiperOption: {
+         effect: 'cube',
+        //  grabCursor: true,
+         loop: true,
+        autoplay: {
+             delay: 17000,
+            //  disableOnInteraction: false,
+         },
+      
+      },
     };
   },
-  methods: {    
-    //  loop: true,
-    // speed: 4000,
-    // autoplay: {
-    // enabled: true,
-    // delay: 2,}
-  }
-}
+  components: {
+    Swiper,
+   SwiperSlide,
+  },
+};
 
-// const swiper = new Swiper('.mySwiper', {
-//  autoplay: {
-//    delay: 5000,
-//  },
-// });
+
 
 </script>
 <style>
@@ -103,6 +98,7 @@ body {
 @media screen and (max-width: 980px) {  
 .wrapper {   
     width: 360px;
+    margin: 40px auto;
 }
 }
 </style>

@@ -22,25 +22,28 @@ export default {
     align-items: center;
     align-content: flex-end;
     justify-content: space-between;
-    background-color: green;
+    background-color: #00B21C;
     width: 100%;
     color: white;   
     text-align: center;
-    font-size: 18px;         
+    font-size: 22px;         
     position: absolute;
     /* font-size: 0.8em; */
-    line-height: 120%;
+    line-height: 100%;
     font-weight: 900;
     text-align: center;
-    font-family: 'LeroyMerlinSans-Regular';  
+    font-family: 'Leroy Merlin Sans';
     font-weight: normal;
-   
+    height: 50px;
+    bottom: 0;
+    overflow: hidden;   
 }
 .bannerLogo{
-  display: flex;
-  height: 60px;
-  -webkit-box-shadow: 0 0.4em 0 rgb(0 0 0 / 15%);
-  box-shadow: 0 0.4em 0 rgb(0 0 0 / 15%);
+  /* display: flex; */
+  height: 70px;
+  box-shadow: 2 0.4 0 black;
+  margin-right: 0.7em; 
+  bottom: 0;
 }
 .footerText {
   margin-left: 50%;
@@ -50,8 +53,10 @@ export default {
   
 .footer {
     position: relative;
-    margin-top: 10em;
-   
+    margin-top: 7em;   
+}
+.footerText {
+  margin-left: 30%;
 }
 }
 </style>

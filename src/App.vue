@@ -23,24 +23,31 @@ export default {
 
 <style>
 @font-face {
-     font-family: 'LeroyMerlinSans-Bold';
-     src: url('/assets/fonts/LeroyMerlinSans-Bold.eot');
-     src: url('/assets/fonts/LeroyMerlinSans-Bold?#iefix') format('embedded-opentype'),
-     url('/assets/fonts/LeroyMerlinSans-Bold.otf') format('font-opentype'),
-     url('/assets/fonts/LeroyMerlinSans-Bold.woff') format('font-woff'),
-     url('/assets/fonts/LeroyMerlinSans-Bold.ttf') format('font-truetype');    
-     font-weight: bold;
-     font-style: bold;
-
-     font-family: 'LeroyMerlinSans-Regular';
-     src: url('/assets/fonts/LeroyMerlinSans-Regular.eot');
-     src: url('/assets/fonts/LeroyMerlinSans-Regular?#iefix') format('embedded-opentype'),
-     url('/assets/fonts/LeroyMerlinSans-Regular.otf') format('font-opentype'),
-     url('/assets/fonts/LeroyMerlinSans-Regular.woff') format('font-woff'),
-     url('/assets/fonts/LeroyMerlinSans-Regular.ttf') format('font-truetype');    
-     font-weight: normal;
-     font-style: normal;
+    font-family: 'Leroy Merlin Sans';
+    src: url('./assets/fonts/LeroyMerlinSans-Bold.eot');
+    src: url('./assets/fonts/LeroyMerlinSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/LeroyMerlinSans-Bold.woff2') format('woff2'),
+        url('./assets/fonts/LeroyMerlinSans-Bold.woff') format('woff'),
+        url('./assets/fonts/LeroyMerlinSans-Bold.ttf') format('truetype'),
+        url('./assets/fonts/LeroyMerlinSans-Bold.svg#LeroyMerlinSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
+
+@font-face {
+    font-family: 'Leroy Merlin Sans';
+    src: url('./assets/fonts/LeroyMerlinSans-Regular.eot');
+    src: url('./assets/fonts/LeroyMerlinSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/LeroyMerlinSans-Regular.woff2') format('woff2'),
+        url('./assets/fonts/LeroyMerlinSans-Regular.woff') format('woff'),
+        url('./assets/fonts/LeroyMerlinSans-Regular.ttf') format('truetype'),
+        url('./assets/fonts/LeroyMerlinSans-Regular.svg#LeroyMerlinSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 #app { 
     display: grid; 
     grid-template-rows: 760px 50px;

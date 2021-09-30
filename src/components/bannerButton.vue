@@ -14,20 +14,19 @@ export default {
 }
 </script>
 <style scoped>
-
 .bannerButton {
     appearance: none;
     cursor: pointer;
     margin-top: 2em;
-    margin-left: 4em;
+    margin-left: 3em;
     /* margin-bottom: 6em; */
-    background-color: green;  
+    background-color: #00B21C;  
     border: 0; 
     line-height: 50px;
     color: white;   
     text-align: center;
     font-size: 45px; 
-    font-family: 'LeroyMerlinSans-Regular'; 
+     font-family: 'Leroy Merlin Sans';
     font-weight: bold;    
     width: 10em;
     height: 3em;

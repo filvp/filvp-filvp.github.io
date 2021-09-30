@@ -70,5 +70,8 @@ video{
     /* .video-wrapper {
       margin: 0 auto;
 }     */
+.videoBlock{
+  margin: 40px auto;
+}
 }
 </style>
